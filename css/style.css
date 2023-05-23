@@ -2,6 +2,7 @@
 body{
     background-color: #E8E8E8;
 }
+
 .a_tbdr{
     border:1px dashed red;
 }
@@ -95,6 +96,8 @@ footer{
        color:#333 !important;
        opacity:0.5 !important;
  }
+
+
 
 
 @media screen and (max-width: 576px) {
