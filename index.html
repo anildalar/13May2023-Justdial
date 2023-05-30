@@ -13,18 +13,19 @@
     </head>
     <body>
         <!-- Modal -->
+        <button class="btn a_scrollToTop bg-light rounded-circle position-fixed bottom-0 end-0" style="bottom:36px !important;right:10px !important;">
+            <i class="fa-solid fa-chevron-up fa-lg"></i>
+        </button>
         <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-body p-0 ">
                         <div class="d-none">
-
                             <div class="clearfix">
                                 <div class="float-start ms-3">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                            </div>
-                           
+                            </div>                           
                             <div class="row m-0">
                                 <div class="col">
                                     <a class="btn text-body-tertiary fw-bold" href="#">Sign In</a>
@@ -135,7 +136,7 @@
                             <img class="img-fluid mt-2" src="./img/logo.svg" />
                         </a>
                     </div>
-                    <div class="col-8 col-sm-3 a_form_col a_tbdr">
+                    <div class="col-8 col-sm-3 a_form_col a_tbdr d-block d-sm-none">
                         <div class="d-block d-sm-none">
                             <ul class="nav float-end  mt-2  a_tnr">
                                 <li class="nav-item">
@@ -154,68 +155,70 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-7 pt-2 ps-3 pe-3" >                       
-                        <form class="d-sm-none d-md-none border mb-2 pt-0 pb-0 border-dark-subtle rounded-3 p-1 ">
-                            <div class="row ">
-                                <div class="col-1 p-0 ">
-                                    <button class="btn ms-1">
-                                        <i class="fa-solid fa-magnifying-glass text-body-tertiary"></i>
-                                    </button>
+                    <div class="a_headerright clearfix col-12 col-sm-10 pt-2 ps-3 pe-3" >   
+                        <div class="">                            
+                            <form class=" d-sm-none d-md-none border mb-2 pt-0 pb-0 border-dark-subtle rounded-3 p-1 ">
+                                <div class="row ">
+                                    <div class="col-1 p-0 ">
+                                        <button class="btn ms-1">
+                                            <i class="fa-solid fa-magnifying-glass text-body-tertiary"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-9 p-0">
+                                        <input type="search" placeholder="Packers and movers" class="form-control shadow-none border border-0" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="col-2 p-0">
+                                        <button type="submit" class="btn float-end">
+                                            <img src="./img/mic.svg" />
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="col-9 p-0">
-                                    <input type="search" placeholder="Packers and movers" class="form-control shadow-none border border-0" id="exampleInputPassword1">
-                                </div>
-                                <div class="col-2 p-0">
-                                    <button type="submit" class="btn float-end">
-                                        <img src="./img/mic.svg" />
-                                    </button>
-                                </div>
+                            </form>
+                            <div class="d-none d-sm-block a_tbdr float-end">
+    
+                                <ul class=" nav mt-3 ms-3 a_menu ">
+                                    <li class="nav-item">
+                                        <a class="ps-2 pt-1 pb-1 pe-2 nav-link active" aria-current="page" href="#">
+                                            <img src="./img/nav_language_icon.svg" /> English
+                                            <img src="./img/down_arrow5.svg" /> 
+                                        </a>
+                                        <ul class="nav flex-column a_submenu bg-white list-unstyled border position-absolute">
+                                            <li class="nav-item">
+                                                <a href="#"  class="nav-link text-secondary-emphasis active ">Hindi</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#"  class="nav-link text-secondary-emphasis">English</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#"  class="nav-link text-secondary-emphasis">Marathi</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">We are hiring</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">Investor Relation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img class="me-1" src="./img/nav_advertise_icon.svg" />Advertise</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/nav_listing_icon.svg" /> Free Listing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/notify_icon.svg" /></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/jd_login_icon.svg" /> Login/Sign-Up</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </form>
-                        <div class="d-none d-sm-block a_tbdr">
-
-                            <ul class=" nav mt-3 ms-3 a_menu ">
-                                <li class="nav-item">
-                                    <a class="ps-2 pt-1 pb-1 pe-2 nav-link active" aria-current="page" href="#">
-                                        <img src="./img/nav_language_icon.svg" /> English
-                                        <img src="./img/down_arrow5.svg" /> 
-                                    </a>
-                                    <ul class="nav flex-column a_submenu bg-white list-unstyled border position-absolute">
-                                        <li class="nav-item">
-                                            <a href="#"  class="nav-link text-secondary-emphasis active ">Hindi</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#"  class="nav-link text-secondary-emphasis">English</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#"  class="nav-link text-secondary-emphasis">Marathi</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">We are hiring</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">Investor Relation</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img class="me-1" src="./img/nav_advertise_icon.svg" />Advertise</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/nav_listing_icon.svg" /> Free Listing</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/notify_icon.svg" /></a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/jd_login_icon.svg" /> Login/Sign-Up</a>
-                                </li>
-                            </ul>
-                        </div>
+                        </div>                    
                     </div>
                 </div>
             </header>
-            <main class="a_tbdr bg-white ps-5 pe-5">
+            <main class="a_tbdr bg-white ps-5 pe-5 ">
                 <div class="a_m1 d-block d-sm-none">
                     <div class="row m-0">
                         <div class="col-3 a_tbdr d-flex align-items-center p-0">
@@ -475,23 +478,26 @@
                                     </div>
                                 </div>
                             </div>
-                            <form>
+                            <form class="">
                                 <div class="row m-0 a_tbdr">
                                     <div class="col-4 a_tbdr">
-                                        <input type="text" class="form-control shadow-none border-dark pt-3 pb-3" placeholder="Rejeev Nagar, Neemuch" aria-label="First name">
+                                        <div class="p-2 d-flex flex-row align-items-center border border-dark rounded-2 a_city_input ">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <input type="text" class="form-control form-control-sm a_city_input a_city_input2 border-0  shadow-none" placeholder="Rejeev Nagar, Neemuch" aria-label="First name">
+                                        </div>
                                     </div>
                                     <div class="col-8 a_tbdr">
-                                        <div class="row m-0 border border-dark rounded-4">
-                                            <div class="col-9">
+                                        <div class="row m-0 border border-dark rounded-2">
+                                            <div class="col-9 p-0">
                                                 <input type="text" class="form-control border-0 shadow-none  pt-1 pb-1" placeholder="Search for expert service" aria-label="Last name">
                                             </div>
-                                            <div class="col-3">
-                                                <div class="d-flex flex-row mb-3">
+                                            <div class="col-3 p-0">
+                                                <div class="d-flex flex-row">
                                                     <div class="p-1">
                                                         <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/jd_mic_icon.svg">
                                                     </div>
                                                     <div class="p-1">
-                                                        <button class="btn a_orange" >
+                                                        <button class="btn btn-sm a_orange" >
 
                                                             <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/jd_mic_icon.svg">
                                                         </button>
@@ -511,7 +517,7 @@
                 </div>
                 <div class="a_m22 d-none d-sm-block">
                     <div class="row m-0 h-100">
-                        <div class="col-6 p-0 h-100 a_tbdr">
+                        <div class="col-6 p-0 h-100 a_tbdr ">
                             <div id="carouselExampleIndicators" class="carousel slide a_mainslider" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
