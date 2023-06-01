@@ -11,8 +11,20 @@ body{
     z-index: 10000 !important;
 
 }
+.a_b2b{
+    /*
+    transform-origin: x-axis y-axis
+    */
+    transform-origin: left center;
+    background-color: #0F7DD8 !important;
+    transform: scale(0.8, 0.8);    
+    transition: all linear 0.3s;
+    left:-48px !important;
+   
+}
+
 .a_tbdr{
-    border:1px dashed red;
+   /*  border:1px dashed red;  */
 }
 
 header{
@@ -210,6 +222,16 @@ footer{
 }
 .a_xyz:hover  span{
     transform:  scale3d(1.1,1.1,1);
+}
+.a_xyz:hover .a_b2b{
+    left:0px !important;
+}
+.a_xyz:hover .a_b2b{
+    color:#0F7DD8 !important;
+    background-color: #fff !important; 
+}
+.a_xyz:hover i{
+    color:#085799;
 }
 
 @keyframes myanimation {
