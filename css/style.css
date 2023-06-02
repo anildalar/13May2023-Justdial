@@ -22,9 +22,21 @@ body{
     left:-48px !important;
    
 }
+.a_custom-smallest{
+    font-size: 14px !important;
+}
+.a_m55 img:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.03);
+}
+.a_m55 a:hover{
+    background-color: transparent;
+}
 
+.a_blue{
+    color:#0076D7 !important;
+}
 .a_tbdr{
-   /*  border:1px dashed red;  */
+   /* border:1px dashed red;  */
 }
 
 header{
@@ -248,8 +260,17 @@ footer{
         transform: translateY(-42px);
     }
 }
-
+@media screen and (min-width: 577px) {
+    main{
+        padding-left: 45px !important;
+        padding-right: 45px !important;
+    }
+}
 @media screen and (max-width: 576px) {
+    main{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
     .a_form_col{
         height: 50px;
     }
